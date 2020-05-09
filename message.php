@@ -1,3 +1,4 @@
+<body background="resim/login_bg.jpg" style="background-repeat:no-repeat; background-attachment: fixed; background-size: 100% 100%;">
 <center>
 <div id="msg">
 
@@ -5,7 +6,7 @@
   <br><br><br><br>
 <?php
 
-// index.php sayfası
+
 
 
 session_start();
@@ -15,13 +16,13 @@ if($_SESSION["kullaniciadi"] == "b191210301@sakarya.edu.tr" && $_SESSION["kullan
 
 
 echo "Hoşgeldiniz ".$_SESSION["kullaniciadi"]."<br><br>
-<a href='hakkında.html'>Web Sitemiz</a> | <a href='cikis.php'>Çıkış</a>";
+<a href='hakkında.html'>Web Sitemiz</a> | <a href='cikis.php'>Oturumu Kapat</a>";
 	
 }
 else
 {
 
-header("location: login.php");	
+header("location: index.php");	
 
 }
 
