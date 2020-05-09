@@ -1,6 +1,6 @@
 <?php
 
-// giris.php sayfası
+
 
 session_start();
 
@@ -14,8 +14,12 @@ if(isset($_POST["girisbuton"]))
 }
 
 ?>
-<body >
+
 <link rel="stylesheet" href="style.css">
+
+
+<body background="resim/login_bg.jpg" style="background-repeat:no-repeat; background-attachment: fixed; background-size: 100% 100%;">
+
 
 <form name="kullanicigirisi" method="post" action="">
 <div>
