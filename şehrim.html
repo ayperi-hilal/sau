@@ -1,43 +1,41 @@
+<!DOCTYPE html>
 <html>
-
 <head>
 <title>ŞEHRİM</title>
 <meta charset="UTF-8"/>
-</head>
-
-
-
-<div>
-
-<a href="Logout.aspx">Oturumu Kapat <i class="pull-right fa   fa-sign-out"></i></a>
-</div>
-<div>
-
- <ul>
-
-  <li><a  href="hakkında.html">Hakkımızda</a></li>
-
-  
-  <li><a href="eğitim.html">Eğitim Bilgileri</a></li>
-
-  <li><a class="aktif" href="şehrim.html">Şehrim</a></li>
-  
-  <li><a href="mirasımız.html">Mirasımız</a></li>
-
-  
-
-<li><a href="iletisim.html">İletişim</a></li>
-</ul>
-
 <link rel="stylesheet" href="style.css">
+</head>
+<!--<body style="margin: 25px 65px;">-->
+<body>
+
+<div class="navbar" id="myNavbar">
+  <a href="hakkında.html" >HAKKINDA</a>
+  <a href="egitim.html">EĞİTİM BİLGİLERİ</a>
+  <a class="active" href="şehrim.html">ŞEHRİM</a>
+  <a href="mirasımız.html">MİRASIMIZ</a>
+  <a href="iletisim.html">İLETİŞİM</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  <a class="çikis" href="cikis.php">ÇIKIŞ YAP ❌</a>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myNavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
 </div>
 
 <div>
-<body>
-<div>
+
+<div class="m1">
 <div id="sehir1">
 					<h1><center><i>bir başkadır benim memleketim...</i></center></h1>
-			<div id="isim">
+				<div id="isim">
 					<p>Yüzölçümü :489.500,00 km2 Nüfus: 1,03 milyon (2019) Rakım: 31 m (101 ft) olan Sakarya ili adını; aşağı havzasında bulunduğu, 
 					topraklarında Karadeniz'e dökülen ve il topraklarını G-K doğrultusunda ortadan ikiye bölerek kat eden Sakarya Nehrinden alır. Sakarya
 					Nehri'nin ise adını nereden aldığına ilişkin bilgiler Frigler dönemine değin uzanmaktadır. Sakarya adının nereden geldiği ile ilgili 
@@ -80,64 +78,52 @@ I. Justinianus’un 562 yılında Sakarya Nehri’nin üzerine yaptırdığı Be
 <p>Kurtuluş mücadelesi döneminde 25 Mart tarihinde Yunanlılar tarafından işgal edilen bu bölge, 21 Hazirana kadar 3 ay süren işgalden 21 Haziranda kuttulmuş ve 
 Kurtuluş Günü olarak 21 Haziran heryıl coşkulu bir şekilde kutlanmaktadır</p>
 <p>Konumu itibairiyle doğu ile batıyı birbirine bağlayan Sakarya ili tarihte olduğu gibi günümüzde de önemini kaybetmemeiş gözde şehirlerden biridir.</p>
-<p>Sakarya ili tarih boyunca önemli medeniyetler bünyesinde bulunarak zengin bir tarihi kültüre sahiptir. Bu zengin miras ile ilgili yazımıza göz atmayı unutmayınız :)</p>
-<p><h1>buraya miras sayfasının linki konulacak</h1></p>
+<p>Sakarya ili tarih boyunca önemli medeniyetler bünyesinde bulunarak zengin bir tarihi kültüre sahiptir. Bu zengin <a href="mirasımız.html"> miras</a> ile ilgili yazımıza göz atmayı unutmayınız :)</p>
 <p>Sakarya zengin bir kültürel geçmişe sahip olması yanı sıra zengin doğal güzellikleri ile de göz kamaştırmaktadır. Sizler için bu göz kamaştırıcı 
 doğal güzelliklerden bir kaçını sizler için derledik. </p>
 </div>
 </div>
 </div>
+<div class="m1">
 <div>
-<table >
-<tr>
-<td>
-<a href="#acar">
-<img src ="resim/acar1.jpg"  height="180" width="300"/>
-</a>
-</td>
-<td>
-<a href="#akgol">
-<img src ="resim/akgol.png" height="180" width="300"/>
-</a>
-</td>
-<td>
-<a href="#yayla">
-<img src ="resim/cigdemyayla.png" height="180" width="300"/>
-</a>
-</td>
-<td>
-<a href="#Harkköy">
-<img src ="resim/kanyon.jpg" height="180" width="300"/>
-</a>
-</td>
 
-</tr>
-</table>
-<div>
-<div>
+<a href="#acar"><img src ="resim/acar1.jpg" height="180" width="300"/></a>
+
+
+<a href="#akgol"><img src ="resim/akgol.png" height="180" width="300"/></a>
+
+
+<a href="#yayla"><img src ="resim/cigdemyayla.png" height="180" width="300"/></a>
+
+
+<a href="#Harkköy"><img src ="resim/kanyon.jpg" height="180" width="300"/></a>
+
+
+</div>
+<div class="m1">
 <h1 id="acar"> ACARLAR LONGOZU</h1>
-<div >
+<div>
 <p>1,562 hektarlık bir alanı kapsayan Acarlar Gölü, Sakarya’nın önemli turizm merkezlerindendir. Acarlar Gölü Longoz Ormanı ise birinci derece doğal sit alanıdır. Koruma bölgesi içinde bulunan Acarlar Longozu, yaz aylarında kurumakta kışın ise su birikintisi ile oluşmaktadır.</p>
 <p>Longozun yüzölçümü 1.562 hektar olup, derinliği 1,5 metreye kadar çıkmaktadır. Yazın suları çekilen longozun toprakları köylüler tarafından tarım arazisi olarak kullanılmaktadır. Longozun çevresi bütünüyle dişbudak ormanlarıyla çevrilidir ve bu ağaçlar yer yer gölün bataklık kesimlerine sokulmaktadır. </p>
+</div>
 
-</div>
-<div>
 <center>
-<img src="resim/acar1.jpg"  height="400" width="900">
+<img src="resim/acar1.jpg" class="responsive" width="600" height="400">
 </center>
-</div>
+
+
 <div><p>Buralarda sülün, çulluk ve yaban ördeği gibi hayvanlar yaşamakta ve tatlı su balığı avcılığı yapılmaktadır. Longozdan çıkan balık türleri; yayın, kızıl kanat, sazan, turna, oklama ve bunların dışında birçok balık çeşidi bulunmaktadır.</p>
 <p>Acarlar Longozu 2300 civarında bitki türüne de ev sahipliği yapmaktadır. Su menekşesi, su lalesi ve çeşitli renkte nilüferler bunlardan bazılarıdır. Longozda ayrıca tekne ve su bisikleti turları yapılmaktadır</p>
 </div>
 
-	<center>					 
+<center>					 
 <div>	
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.760010717194!2d30.551815414846594!3d41.11793207928982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x409ddf7a89bcede9%3A0xc05052fa76a0bd85!2sAcarlar%20Longozu!5e0!3m2!1str!2str!4v1588169884660!5m2!1str!2str" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" ></iframe>
 
 </div>
 </center>
 </div>
-<div>
+<div class="m1">
 <h1 id="akgol">AKGÖL</h1>
 
 <p>Adapazarı, Karasu yolunda 25-26 km gittikten sonra Gölkent tabelasından içeri girip 4-5 km daha devam ettiğinizde Akgöl veya Büyük Akgöl’e ulaşacaksınız.</p>
@@ -145,7 +131,7 @@ doğal güzelliklerden bir kaçını sizler için derledik. </p>
 <p>İlk yerleşim başladığında köy çok sık bir bitki örtüsüne sahipken bugün ormanın bir kısmı tarla açılmak için malesef yok edilmiş durumda. Göl kenarındaki yollar asfalt ancak tarla yolları toprak. Aracınızla rahatca gölün yakınına gidebilirsiniz. 
  Göl kenarında yoğun sazlıklar ve aralarında boyanmamış, artık suda kalmaktan siyaha dönmüş çok güzel ahşap kayıklar var. Gölün içinden yükselen ağaçlar,
  kayıklar ve birde güzel bulutlar varsa keyfinize diyecek yok. Hele birde gün batımı...</p>
- <div><center><img src="resim/akgol2.jpg"height="400" width="900"></center></div>
+ <div><center><img src="resim/akgol2.jpg" class="responsive" height="400" width="900"></center></div>
 <p>Gölün kenarında birkaç tane salaş balık lokantası var. Kışın pek kimse olmadığı için kapalı oluyorlar ama baharda veya yazın tam gölün kenarında, çimenlerin üzerinde öğle yemeği yemek oldukça keyifli olmalı. İçlerinden Sami Baba’nın Yeri olan lokanta kış olmasına rağmen açık oluyor. Orada kış aylarındada bir şeyler yiyebilirsiniz.</p>
 <p>Göl balık açısından zengin. En çok bulunan balıklar Kızılkanat, Çapak, Turna, Yayın ve Sazan. Kendinize bunlardan bir veya birkaçı ile güzel bir ziyafet çekebilirsiniz. Göle tepeden bakıp birkaç fotograf çekmek isterseniz kilisenin yanındaki tepeye çıkmanız gerekiyor.</p>
 
@@ -157,13 +143,13 @@ doğal güzelliklerden bir kaçını sizler için derledik. </p>
 </div>
 </div>
 
-<div>
+<div class="m1">
 <h1 id="yayla">ÇİĞDEM YAYLASI</h1>
 
 <p>Sapanca'ya 20 km mesafede yer alan Sapanca Çiğdem Yaylası, ülkemizin en güzel yaylarından biridir. Hatta turizmci, gezgin ve yazarların yer aldığı bir jüri tarafından Türkiye'nin en güzel 10 yaylasından biri seçilmiştir. Yayla özellikle ismini aldığı çiğdemlerin açtığı dönem olan ilkbahar ve sonbaharda bambaşka bir güzelliğe bürünmektedir. Marmara Bölgesi'nin en yüksek ve
  büyük yaylarından biri olan Sapanca Çiğdem Yaylası, yaklaşık 1500 metre yüksekliğe sahiptir. Rakımı yüksek olsa da bölgeye ulaşım kolay sağlanmaktadır.</p>
  <p>Karadeniz yaylalarının bir minyatürü olan bu yemyeşil doğa harikası benim ve ailemin huzur bulduğu yerdir.</p>
- <div><center><img src="resim/cigdem1.jpg" ></center></div>
+<img class="img1" src="resim/cigdem1.jpg" class="responsive" >
 <p>Yapısıyla ilgi çeken evlerin bulunduğu Çiğdem Yaylası, turizmci, gezgin ve yazarlardan oluşan büyük bir jüri tarafından Türkiye’nin en güzel on yaylası arasında gösterilmiştir. Topukotu olarak adlandırılan çimle kaplı geniş alanı, küçük ve hafif eğimli tepeleri ile yaylanın oldukça hoş bir manzarası vardır</p>
 <p>Yaylada her yıl Temmuz ayının ikinci haftasında yayla şenlikleri düzenlenmektedir. Şenlikte yayladaki hayvancılık ile yetişen sebze ve meyveler tanıtılmakta, ayrıca çeşitli eğlenceler yer almaktadır.</p>
 <p>Çiğdem yaylasından çam içindeki orman yolunu takip ederek Turnalık yaylasına geçebilirsiniz.  Yaklaşık yarım saatlik bir yürüyüş sonrasında bulunan  yangın göleti ve yayla evleri sizi karşılayacatır. Başka bir yazımızda buradan da bahsedeceğiz sizlere...</p>
@@ -174,11 +160,11 @@ doğal güzelliklerden bir kaçını sizler için derledik. </p>
 </center>
 </div>
 </div>
-<div>
+<div class="m1">
 <h1 id="Harkköy">HARKKÖY KANYONU</h1>
 <p>Taraklı Tuzla Köyü Yolu Üzerinde olup, şehir merkezine 60 Km mesafededir.</p>
 <p>Hark Kanyonu girişine 40 metre uzaklıkta bulunan mağaranın içi, 15 metrelik bir şelalenin de kattığı görsel zenginlik ile gerçekten eşsiz güzelliğe sahip doğa harikalarından biridir.</p>
-<div><center><img src ="resim/Harkköy.jpg"></center></div>
+<div><center><img src ="resim/Harkköy.jpg" class="responsive"></center></div>
 <p>Kanyonda bulunan ve adını buradan alan Harkköy Şelalesi de 5 Katlı doğal bir şelaledir. Kış aylarında ise çok şiddetli akmakla birlikte 4 mevsim boyunca akmaya devam eden muhteşem doğal güzelliktir.</p>
 <p>Su sesinin verdiği enerji ve huzur için gelen yerli ve yabancı türistelerin gözde mekanı halindedir. Sizlerinde yolu Taraklıya düşerse bu olağan üstü mekani görmeden gitmeyin derim.</p>
 <div>
@@ -187,13 +173,9 @@ doğal güzelliklerden bir kaçını sizler için derledik. </p>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24281.97426068407!2d30.478428408648572!3d40.46980512895812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ccbfb4fabb16b1%3A0xabcedf7902461f46!2zSGFya2vDtnksIDU0NzUwIFRhcmFrbMSxL1Nha2FyeWE!5e0!3m2!1str!2str!4v1588505089031!5m2!1str!2str" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
 </center>
-
 </div>
-
-</div>
-
 </div>
 </div>
 </body>
-</div>
+
 </html>
