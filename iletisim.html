@@ -1,94 +1,111 @@
 <!DOCTYPE html>
 <html>
-<head><title>İLETİŞİM</title>
+<head>
+<title>İLETİŞİM</title>
+<meta charset="UTF-8">
 <link rel="stylesheet" href="style.css">
 
 <meta charset="UTF-8"/>
 
+<?php
+
+
+
+session_start();
+
+if(isset($_POST["Gönder"]))
+{
+
+	$_SESSION["adisoyad"] = $_POST["adisoyad"];
+	$_SESSION["email"] = $_POST["email"];
+	$_SESSION["mesaj"] = $_POST["mesaj"];
+	
+	
+	header('location: form.php');	
+}
+
+?>
 </head>
 
+
+  
+
+
 <body>
-<div>
- <ul>
-
-  <li><a  href="hakkında.html">Hakkımızda</a></li>
-
+<div class="navbar" id="myNavbar">
+  <a href="hakkında.html" >HAKKINDA</a>
+  <a href="egitim.html">EĞİTİM BİLGİLERİ</a>
+  <a href="şehrim.html">ŞEHRİM</a>
+  <a href="mirasımız.html">MİRASIMIZ</a>
+  <a class="active" href="iletisim.html">İLETİŞİM</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  <a class="çikis" href="cikis.php">ÇIKIŞ YAP ❌</a>
   
-  <li><a href="eğitim.html">Eğitim Bilgileri</a></li>
+<script>
+function myFunction() {
+  var x = document.getElementById("myNavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
 
-  <li><a  href="şehrim.html">Şehrim</a></li>
-  
-  <li><a  href="mirasımız.html">Mirasımız</a></li>
-
-
-
-<li><a class="aktif" href="iletisim.html">İletişim</a></li>
-<link rel="stylesheet" href="style.css">
-</ul>
 </div>
-<body>
-    <div class="container">
-        <div class="bg-info text-white text-center py-2 mt-5">
-             <h2>İletişim</h2>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-sm-12">
-                <div>
-                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96722.75353025916!2d30.31225346364676!3d40.74913333139725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ccb2fad58e639f%3A0xb84f12f8c14f1221!2sSakarya!5e0!3m2!1str!2str!4v1588159454986!5m2!1str!2str" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-                <form action="" method="">
-                    <div class="card mt-4">
-                        <div class="card-body p-3">
-                            <div class="form-group">
-                                <div class="input-group mb-2">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text">
-                                            <i class="fa fa-user text-info"></i>
-                                        </div>
-                                    </div>
-                                    <input type="text" class="form-control" name="" placeholder="Ad Soyad" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="input-group mb-2">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text">
-                                            <i class="fa fa-envelope text-info"></i>
-                                        </div>
-                                    </div>
-                                    <input type="email" class="form-control" name="" placeholder="E-Posta" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="input-group mb-2">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text">
-                                            <i class="fa fa-tag text-info"></i>
-                                        </div>
-                                    </div>
-                                    <input type="text" class="form-control" name="" placeholder="Konu" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="input-group mb-2">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text">
-                                            <i class="fa fa-comment text-info"></i>
-                                        </div>
-                                    </div>
-                                    <textarea class="form-control" placeholder="Lütfen Mesajınızı Buraya Yazın.." rows="6" required></textarea>
-                                </div>
-                            </div>
-                            <div class="text-center">
-                                <input type="submit" value="GÖNDER" class="btn btn-info btn-block">
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+
+<div class="responsive">
+<center><h3>Görüş ve önerileriniz için lütfen bizimle iletişime geçiniz.</h3></center>
+
+ </div>
+
+<form action="form.php" method="POST" >
+<center>
+<table width :95%  height : 95% >
+<tr>
+<td rowspan ="8"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96722.75353025916!2d30.31225346364676!3d40.74913333139725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ccb2fad58e639f%3A0xb84f12f8c14f1221!2sSakarya!5e0!3m2!1str!2str!4v1588159454986!5m2!1str!2str"
+ width="600" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+ </td>
+</tr>
+<tr>
+
+<td>E-posta Adresiniz</td>
+
+<td><input type="email" name="email" placeholder="E-Posta" required></td>
+
+</tr>
+<tr>
+
+
+<td>Ad Soyad </td>
+
+<td><input type="text" name="adisoyad" placeholder="Ad Soyad" required></td>
+</tr>
+
+<tr>
+
+<td>Mesajı</td>
+
+<td><textarea name="mesaj" rows="4" cols="50" placeholder="Lütfen Mesajınızı Buraya Yazın.." required ></textarea></td>
+
+</tr>
+<tr>
+
+<td></td>
+
+<td>
+
+  <input type="submit"  name ="Gönder" value="Gönder"> 
+
+  <input type="reset" value="Temizle ">
+
+</td>
+
+</tr>
+
+
+</table>
+</center>
+</form>
 </body>
 </html>
