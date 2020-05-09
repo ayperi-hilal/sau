@@ -1,30 +1,46 @@
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8"/>
   <title>ÖZGEÇMİŞ</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  
+<style>
+table{
+  margin: 25px 65px;
+}
+</style>
 
 </head>
- <body > 
- <div>
- <ul>
 
-  <li><a   href="hakkında.html">Hakkımızda</a></li>
+<body>
 
+<div class="navbar" id="myNavbar">
+  <a href="hakkında.html" >HAKKINDA</a>
+  <a class="active" href="egitim.html">EĞİTİM BİLGİLERİ</a>
+  <a href="şehrim.html">ŞEHRİM</a>
+  <a href="mirasımız.html">MİRASIMIZ</a>
+  <a href="iletisim.html">İLETİŞİM</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  <a href="iletisim.html"></a>
+  <a class="çikis" href="cikis.php">ÇIKIŞ YAP ❌</a>
   
-  <li><a class="aktif" href="eğitim.html">Eğitim Bilgileri</a></li>
+<script>
+function myFunction() {
+  var x = document.getElementById("myNavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
 
-  <li><a  href="şehrim.html">Şehrim</a></li>
-  
-  <li><a  href="mirasımız.html">Mirasımız</a></li>
-
-
-
-<li><a href="iletisim.html">İletişim</a></li>
-<link rel="stylesheet" href="style.css">
-</ul>
 </div>
+
 <div>
-<table style="width:100%" >
+
+<table style="width:90%" >
 	<tr height="200">
 		<td width="150">HİLAL NARMAN</td>
 		
@@ -33,7 +49,7 @@
 		
 	</tr>
 <tr >
-		<td colspan="5" >KİŞİSEL BİLGİLER <hr>
+		<td colspan="5" bgcolor="#6495ED">KİŞİSEL BİLGİLER <hr>
 			</td>
 		
 		
@@ -52,7 +68,7 @@
 	</tr>
 	<tr> <td height="25"></td></tr>
 	<tr>
-		<td colspan="5">İLETİŞİM BİLGİLERİ <hr>
+		<td colspan="5"bgcolor="#6495ED">İLETİŞİM BİLGİLERİ <hr>
 			</td>
 			
 	</tr>
@@ -65,7 +81,7 @@
 	</tr>
 	<tr> <td height="25"></td></tr>
 	<tr>
-		<td colspan="5">ÖĞRENİM BİLGİLERİ <hr>
+		<td colspan="5" bgcolor="#6495ED">ÖĞRENİM BİLGİLERİ <hr>
 			</td>
 			
 	</tr>
@@ -90,7 +106,7 @@
 	
 	
 	<tr>
-		<td colspan="5">İŞ DENEYİMİ <hr>
+		<td colspan="5" bgcolor="#6495ED">İŞ DENEYİMİ <hr>
 			</td>
 			
 	</tr>
@@ -118,7 +134,7 @@
 	</tr>
 	<tr> <td height="25"></td></tr>
 	<tr>
-		<td colspan="5">YABANCI DİL <hr>
+		<td colspan="5" bgcolor="#6495ED">YABANCI DİL <hr>
 			</td>
 			
 	</tr>
@@ -164,6 +180,14 @@
 
 
 </div>
+
+
+<table>
+
+
+
+
+</table>
 
 </body>
 </html> 
