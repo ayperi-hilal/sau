@@ -16,7 +16,7 @@ if($_SESSION["kullaniciadi"] == "b191210301@sakarya.edu.tr" && $_SESSION["kullan
 
 
 echo "Hoşgeldiniz ".$_SESSION["kullaniciadi"]."<br><br>
-<a href='hakkında.html'>Web Sitemiz</a> | <a href='cikis.php'>Oturumu Kapat</a>";
+<a href='hakkinda.html'>Web Sitemiz</a> | <a href='cikis.php'>Oturumu Kapat</a>";
 	
 }
 else
